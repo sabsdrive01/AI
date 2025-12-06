@@ -1,0 +1,27 @@
+# Ignore virtual environment
+venv/
+venv/*
+
+# Ignore Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore your secret key file
+secrete_key.py
+
+# Ignore VS Code settings
+.vscode/
+
+# Ignore OS-specific files (Windows & Linux/macOS)
+Thumbs.db
+.DS_Store
+
+# Ignore build / distribution folders
+build/
+dist/
+*.egg-info/
