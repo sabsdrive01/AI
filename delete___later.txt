@@ -46,24 +46,31 @@ tthe .ipynb with poerpoer explaxaint of the tops as menitoned int he ptompt
 ----------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------
 
-# **4. Runnable Interface**
+### ✅ **Part 1 — Data Loading (Loaders)**
 
-**Purpose:** Explain LangChain’s newer execution engine for flexible pipelines.
+**Goal:** Teach how to bring raw data into LangChain.
 
-### **Sub-topics**
+### **1.1 What Are Loaders?**
 
-1. **What is Runnable?**
-    - Universal abstraction for all workflow components
-    - Everything becomes a “runnable” (prompt, chain, model, function)
-2. **Types of Runnables**
-    - `RunnableMap`
-    - `RunnableSequence`
-    - `RunnableLambda`
-    - `RunnableBranch`
-3. **Async vs Sync Execution**
-    - Faster execution
-    - Parallel operations
-4. **Composability**
-    - Combine prompt → model → post-processing easily
+- Purpose of document loaders
+- Supported formats (PDF, TXT, DOCX, HTML, CSV, websites, etc.)
 
----
+### **1.2 Built-in Loaders**
+
+- `PyPDFLoader`
+- `TextLoader`
+- `WebBaseLoader`
+- `CSVLoader`
+
+### **1.3 Best Practices**
+
+- Cleaning text
+- Handling encoding issues
+- Lazy loading vs full loading
+
+### **1.4 Hands-On Demo**
+
+- Load multiple document formats
+- Extract text
+- Visualize metadata
+- Check loader output schema
