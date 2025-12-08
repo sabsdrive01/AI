@@ -45,38 +45,25 @@ tthe .ipynb with poerpoer explaxaint of the tops as menitoned int he ptompt
 ----------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------
+### **5.1 What is Retrieval?**
 
-# ✅ **Part 4 — Vector Stores (FAISS / Chroma)**
+- Query → embed → search vectors → return top-k chunks
 
-**Goal:** Explain how to store embeddings for fast semantic search.
+### **5.2 Key Parameters**
 
-### **4.1 What Are Vector Stores?**
+- `k` (top K results)
+- Score threshold
+- Filtering metadata
 
-- Purpose
-- Indexing
-- Retrieval mechanism
+### **5.3 Building a Simple RAG Pipeline**
 
-### **4.2 FAISS**
+- Query embedding
+- Retrieve chunks
+- Feed chunks into LLM
+- Answer generation
 
-- Facebook AI Similarity Search
-- Flat index vs IVF indexes
-- Pros & cons
+### **5.4 Hands-On Demo**
 
-### **4.3 ChromaDB**
-
-- Simple, local, persistent
-- Collections
-- Metadata filtering
-
-### **4.4 Building a RAG Index**
-
-- Ingest → Split → Embed → Store
-- Save & load FAISS/Chroma
-- Query your vector database
-
-### **4.5 Hands-On Demo**
-
-- Build a FAISS store
-- Build a Chroma store
-- Run semantic search
-- Compare FAISS vs Chroma performance
+- Build RAG using FAISS
+- Build RAG using Chroma
+- Compare retrieval quality
